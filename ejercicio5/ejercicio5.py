@@ -1,11 +1,18 @@
-#programa para calcular el gasto de agua de una vivienda dado el número de m2 de agua gastados
-
 # input
 
+gasto_fijo=10000
 
+gast_mensual=int(input("gasto mensual del agua: "))
 
 # processing
 
-
+if gast_mensual <=50:
+    costo_agua_mensual=gasto_fijo
+else:
+    if gast_mensual <= 200:
+        costo_agua_mensual=gasto_fijo+2000*(gast_mensual-50)
+    else:
+        costo_agua_mensual=gasto_fijo+3000*(gast_mensual-50)
 
 #output
+print(costo_agua_mensual)

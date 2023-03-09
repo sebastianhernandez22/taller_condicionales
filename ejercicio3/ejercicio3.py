@@ -17,7 +17,7 @@ else:
             p_venta=p_compra+ganancia
     
 # output
-
+print("El precio de venta es: " + str(p_venta))
 print("--------------------------------")
 print("--resultados de las ganancias---")
 print("--------------------------------")
